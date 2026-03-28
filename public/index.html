@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO PRIMÁRIO ===== -->
+  <title>𝚿 Luiza Rosa Neto | Psicóloga 𝚿</title>
+  <meta name="description" content="Luiza Rosa Neto é psicóloga pós-graduanda em psicomotricidade. Atendimento humanizado para crianças, adolescentes, adultos e idosos. Agende sua consulta." />
+  <meta name="keywords" content="psicóloga psicomotricidade, Luiza Rosa Neto, psicóloga, psicomotricidade, atendimento psicológico, terapia psicomotora, desenvolvimento infantil" />
+  <meta name="author" content="Luiza Rosa Neto" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ===== OPEN GRAPH (WhatsApp / redes sociais) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Luiza Rosa Neto | Psicóloga Pós Graduanda em Psicomotricidade" />
+  <meta property="og:description" content="Cuidado, escuta e movimento. Psicóloga pós graduanda em psicomotricidade com atendimento humanizado." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- ===== SCHEMA.ORG — Google entende quem você é ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luiza Rosa Neto",
+    "jobTitle": "Psicóloga Pós Graduanda em Psicomotricidade",
+    "description": "Psicóloga Pós Graduanda em psicomotricidade, oferecendo atendimento humanizado para crianças, adolescentes e adultos.",
+    "url": "https://psicologaluizarosa.com.br",
+    "sameAs": [
+      "https://instagram.com/luiza.psico"
+    ],
+    "knowsAbout": ["Psicomotricidade", "Psicologia", "Desenvolvimento infantil", "Terapia psicomotora"]
+  }
+  </script>
+
+  <!-- ===== FONTES ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== RESET & VARIÁVEIS ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --chocolate:     #3B1F0E;
+      --chocolate-mid: #5C3317;
+      --chocolate-lt:  #7A4728;
+      --cream:         #F5EBD8;
+      --cream-dark:    #E8D5B7;
+      --gold:          #C9A96E;
+      --gold-lt:       #E2C99A;
+      --white:         #FDF8F2;
+      --text-dark:     #2A1208;
+      --text-mid:      #5C3317;
+
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Jost', sans-serif;
+
+      --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--chocolate);
+      color: var(--cream);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--chocolate); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ===== NAVEGAÇÃO ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(59,31,14,0.95), transparent);
+      backdrop-filter: blur(4px);
+      transition: var(--transition);
+    }
+
+    nav.scrolled {
+      background: rgba(59,31,14,0.97);
+      padding: 1rem 4rem;
+      box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--gold-lt);
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--gold);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover { opacity: 1; color: var(--gold-lt); }
+    .nav-links a:hover::after { width: 100%; }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      padding: 0 2rem;
+    }
+
+    /* Flor da Psicologia — imagem PNG */
+    .hero-flower {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-flower img {
+      width: min(90vw, 90vh);
+      height: min(90vw, 90vh);
+      object-fit: contain;
+      opacity: 0.18;
+    }
+
+    /* Textura de fundo */
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(122,71,40,0.35) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 80% at 10% 80%, rgba(201,169,110,0.12) 0%, transparent 60%);
+    }
+
+    /* Linha decorativa vertical */
+    #hero::after {
+      content: '';
+      position: absolute;
+      left: 50%; top: 10%; bottom: 10%;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      opacity: 0.25;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      animation: fadeUp 1.2s ease forwards;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 0.3s ease forwards;
+    }
+
+    .hero-name {
+      font-family: var(--font-serif);
+      font-size: clamp(3.5rem, 9vw, 7.5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 0.5s ease forwards;
+    }
+
+    .hero-name em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--cream-dark);
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 0.7s ease forwards;
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 2.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 0.9s ease forwards;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--cream);
+      opacity: 0;
+      max-width: 560px;
+      margin: 0 auto 3rem;
+      animation: fadeUp 1s 1.1s ease forwards;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 2.5rem;
+      border: 1px solid var(--gold);
+      color: var(--gold-lt);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      transition: var(--transition);
+      opacity: 0;
+      animation: fadeUp 1s 1.3s ease forwards;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+      z-index: -1;
+    }
+
+    .hero-cta:hover { color: var(--chocolate); }
+    .hero-cta:hover::before { transform: scaleX(1); }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0.5;
+      animation: fadeUp 1s 1.8s ease forwards, bounce 2s 2.8s ease-in-out infinite;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .scroll-hint svg { width: 20px; opacity: 0.6; }
+
+    /* ===== SEÇÕES GERAIS ===== */
+    section { padding: 7rem 2rem; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .section-title-psico {
+      font-family: var(--font-serif);
+      font-size: clamp(1.2rem, 3vw, 6rem);
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ===== SOBRE ===== */
+    #sobre {
+      background: linear-gradient(135deg, var(--chocolate-mid) 0%, var(--chocolate) 100%);
+      position: relative;
+    }
+
+    #sobre::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .sobre-visual {
+      position: relative;
+    }
+
+    .sobre-frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border: 1px solid rgba(201,169,110,0.3);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--chocolate-lt), var(--chocolate-mid));
+    }
+
+    .sobre-frame-inner {
+      width: calc(100% - 30px);
+      height: calc(100% - 30px);
+      border: 1px solid rgba(201,169,110,0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .sobre-initials {
+      font-family: var(--font-serif);
+      font-size: 6rem;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.6;
+      line-height: 1;
+      font-style: italic;
+    }
+
+    .sobre-frame-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cream-dark);
+      opacity: 0.5;
+    }
+
+    /* Decoração geométrica */
+    .sobre-deco {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 120px;
+      height: 120px;
+      border: 1px solid var(--gold);
+      opacity: 0.2;
+    }
+
+    .sobre-text p {
+      font-size: 1.3rem;
+      line-height: 1.95;
+      color: var(--cream);
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
+    }
+
+    .sobre-crp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid rgba(201,169,110,0.3);
+      margin-top: 1rem;
+    }
+
+    .sobre-crp span:first-child {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .sobre-crp span:last-child {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--cream);
+    }
+
+    /* ===== ESPECIALIDADES ===== */
+    #especialidades {
+      background: var(--chocolate);
+    }
+
+    .esp-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .esp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: rgba(201,169,110,0.15);
+      border: 1px solid rgba(201,169,110,0.15);
+    }
+
+    .esp-card {
+      background: var(--chocolate);
+      padding: 3rem 2.5rem;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .esp-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--chocolate-mid), var(--chocolate));
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .esp-card:hover::before { opacity: 1; }
+
+    .esp-number {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      opacity: 0.2;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .esp-name {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .esp-desc {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--cream);
+      opacity: 0.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .esp-line {
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+      transition: var(--transition);
+    }
+
+    .esp-card:hover .esp-line { width: 60px; }
+
+    /* ===== ABORDAGEM ===== */
+    .abordagempsico{
+      width: 20px;
+      height: 30px;
+      border: #6b604c;
+      margin-bottom: 1.5rem;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    #abordagem {
+      background: linear-gradient(to bottom, var(--chocolate), var(--chocolate-mid));
+      position: relative;
+    }
+
+    .abordagem-quote {
+      font-family: var(--font-serif);
+      font-size: 3.2rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--gold-lt);
+      margin-bottom: 2rem;
+    }
+
+    .abordagem-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .abordagem-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,169,110,0.2);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .abordagem-card:hover {
+      background: rgba(201,169,110,0.07);
+      border-color: rgba(201,169,110,0.45);
+      transform: translateY(-4px);
+    }
+
+    .abordagem-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .abordagem-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--white);
+      margin: 0;
+    }
+
+    .abordagem-card p {
+      font-size: 0.9rem;
+      line-height: 1.85;
+      color: var(--cream);
+      opacity: 0.72;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .abordagem-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ===== CONTATO ===== */
+    #contato {
+      background: var(--chocolate-mid);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #contato::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    #contato::after {
+      content: 'Psicologa';
+      position: absolute;
+      font-family: var(--font-serif);
+      font-size: 20rem;
+      font-style: italic;
+      color: var(--gold);
+      opacity: 0.03;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .contato-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 300;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contato-sub {
+      font-size: 1rem;
+      color: var(--cream);
+      opacity: 0.7;
+      margin-bottom: 3.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contato-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contato-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.1rem 2.5rem;
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contato-btn.primary {
+      background: var(--gold);
+      color: var(--chocolate);
+      font-weight: 500;
+    }
+
+    .contato-btn.primary:hover {
+      background: var(--gold-lt);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(201,169,110,0.3);
+    }
+
+    .contato-btn.secondary {
+      border: 1px solid rgba(201,169,110,0.4);
+      color: var(--gold-lt);
+    }
+
+    .contato-btn.secondary:hover {
+      border-color: var(--gold);
+      background: rgba(201,169,110,0.08);
+      transform: translateY(-2px);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--chocolate);
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(201,169,110,0.1);
+    }
+
+    footer p {
+      font-size: 0.75rem;
+      color: var(--cream);
+      opacity: 0.4;
+      letter-spacing: 0.1em;
+    }
+
+    /* ===== ANIMAÇÕES ===== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(8px); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 2rem; }
+      nav.scrolled { padding: 0.8rem 2rem; }
+
+      .sobre-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .sobre-visual { max-width: 300px; margin: 0 auto; }
+
+      .esp-grid { grid-template-columns: 1fr; }
+
+      .abordagem-inner { grid-template-columns: 1fr; }
+      .abordagem-sticky { position: static; }
+
+      #hero::after { display: none; }
+
+      .nav-links { display: none; }
+    }
+
+    @media (max-width: 600px) {
+      .esp-grid { grid-template-columns: 1fr; }
+      .contato-links { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Luiza Rosa Neto · Psicóloga</a>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#especialidades">Caminhos de Cuidado</a></li>
+      <li><a href="#abordagem">Abordagem</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-flower" aria-hidden="true">
+      <img src="/images/psicologia.png" alt="" />
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Psicologia · Psicomotricidade</span>
+      <h1 class="hero-name">Luiza Rosa Neto</h1>
+      <p class="hero-title">Psicóloga Pós Graduanda em Psicomotricidade</p>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">
+        Corpo, mente e movimento em equilíbrio. Uma escuta sensível para cada jornada,
+        com cuidado que integra o sujeito em sua totalidade.
+      </p>
+      <a href="#contato" class="hero-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        Agendar consulta
+      </a>
+    </div>
+
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      scroll
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual reveal">
+          <div class="sobre-frame">
+            <img
+              src="/images/lulu.png"
+              alt="Luiza Rosa Neto Psicóloga (UFRGS)"
+              style="width:100%; height:100%; object-fit:cover; display:block;"
+            />
+          </div>
+        </div>
+
+        <div class="sobre-text reveal">
+          <span class="section-label">Quem sou</span>
+          <h2 class="section-title-psico">Psicologa formada pela Universidade Federal do Rio Grande do Sul (UFRGS).</h2>
+          <p>
+            Atuou no acompanhamento clínico individual e grupal, além de possuir experiência no trabalho com equipes interdisciplinares e multidisciplinares. 
+          </p>
+          <p>
+            Atualmente cursa Pós-Graduação em Psicomotricidade. Possui trajetória em serviços públicos de saúde mental e de atenção psicossocial, com experiência no acompanhamento de casos complexos relacionados ao desenvolvimento e ao sofrimento psíquico.
+          </p>
+          <p>
+            Atendo crianças, adolescentes, adultos e idosos, a partir da orientação psicanalítica. 
+            <a href="https://linktr.ee/luizarosaneto" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color:#F4C0D1;">https://linktr.ee/luizarosaneto</a>
+          </p>
+          <div class="sobre-crp">
+            <span>CRP</span>
+            <span>XXX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAMINHOS DE CUIDADO ===== -->
+  <section id="especialidades">
+    <div class="container">
+      <div class="esp-header reveal">
+        <span class="section-label">O que ofereço</span>
+        <h2 class="section-title">Caminhos de Cuidado</h2>
+      </div>
+
+      <div class="esp-grid">
+        <div class="esp-card reveal">
+          <h3 class="esp-name">Psicomotricidade</h3>
+          <p class="esp-desc">
+            Terapia que integra corpo e mente, trabalhando coordenação motora,
+            esquema corporal, equilíbrio e expressão emocional através do movimento, com espaço
+            de escuta seguro para promover autoconhecimento e bem-estar emocional.
+          </p>
+        </div>
+
+        <div class="esp-card reveal">
+          <h3 class="esp-name">Desenvolvimento Infantil</h3>
+          <p class="esp-desc">
+            Acompanhamento para crianças e adolescentes com dificuldades de aprendizagem,
+            atenção, coordenação e comportamento, com foco no potencial de cada uma.
+          </p>
+        </div>
+
+        <div class="esp-card reveal">
+          <h3 class="esp-name">Psicoterapia</h3>
+          <p class="esp-desc">
+            Atendimento psicológico para crianças e adolescentes exclusivamente de forma presencial 
+            em Porto Alegre/RS, adultos e idosos também de forma online pelo mundo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABORDAGEM ===== -->
+  <section id="abordagem">
+    <div class="container">
+      <div class="abordagem-inner">
+        <div id="abordagempsico" class="esp-header">
+          <h2 class="section-title">Abordagem</h2>
+        </div>
+        <div class="abordagem-cards">
+          <div class="abordagem-card reveal">
+            <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">🧠</div>
+            <h4>Psicanálise e Psicomotricidade</h4>
+            <p>Há emoções que o corpo carrega antes de encontrar palavras. Acompanhamento de cada pessoa no caminho de reconhecer, expressar e transformar o que vive dentro de si.</p>
+          </div>
+
+          <div class="abordagem-card reveal">
+            <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">𝚿</div>
+            <h4>Empatia e Sensibilidade</h4>
+            <p>O vínculo terapêutico é construído sobre presença genuína e escuta ativa. Cada atendimento respeita a singularidade de quem chega, sem pressa e sem julgamentos.</p>
+          </div>
+
+          <div class="abordagem-card reveal">
+            <div class="abordagem-icon" style="background:rgba(251,234,240,0.12); color:#F4C0D1;">♥</div>
+            <h4>Escuta Ativa e Humanizada</h4>
+            <p>Cada pessoa é única. O atendimento é adaptado ao ritmo, às necessidades e à história de vida de quem chega, sem julgamentos.</p>
+          </div>
+
+          <div class="abordagem-card reveal">
+            <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">◎</div>
+            <h4>Visão Integrada</h4>
+            <p>Corpo e mente são inseparáveis. O trabalho considera tanto as dimensões emocionais quanto as corporais na vida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato">
+    <div class="container">
+      <span class="section-label reveal" style="display:block; margin-bottom:1rem;">Vamos conversar</span>
+      <h2 class="contato-title reveal">Agende sua <em style="font-style:italic; color:var(--gold-lt)">consulta</em></h2>
+      <p class="contato-sub reveal">Dê o primeiro passo. Estou aqui para te acompanhar.</p>
+
+      <div class="contato-links reveal">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/555191758608" target="_blank" rel="noopener noreferrer" class="contato-btn primary" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.522 5.858L.055 23.454a.5.5 0 00.608.61l5.788-1.516A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.073-1.384l-.36-.214-3.742.981.999-3.648-.235-.374A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+          </svg>
+          WhatsApp
+        </a>
+        
+        <a href="#sobre" class="contato-btn secondary">
+          Saiba mais sobre mim
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/psi.luizarosaneto" target="_blank" rel="noopener noreferrer" class="contato-btn secondary" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram
+        </a>
+
+        <!-- E-mail -->
+        <a href="mailto:luizaroneto@gmail.com" class="contato-btn secondary" aria-label="E-mail">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          E-mail
+        </a>
+        
+        <!-- Linktree -->
+        <a href="https://linktr.ee/luizarosaneto" target="_blank" rel="noopener noreferrer" class="contato-btn secondary" aria-label="Linktree">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v10M8 6l4-4 4 4M7 12H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6a2 2 0 00-2-2h-2"/>
+          </svg>
+          Linktree
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/luiza-rosa-neto-18375a3b5/" target="_blank" rel="noopener noreferrer" class="contato-btn secondary" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <!-- Lattes CNPQ -->
+        <a href="https://lattes.cnpq.br/6914175228258147" target="_blank" rel="noopener noreferrer" class="contato-btn secondary" aria-label="CAPES">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2v10M8 6l4-4 4 4M7 12H5a2 2 0 00-2 2v6a2 2 0 002 2h14a2 2 0 002-2v-6a2 2 0 00-2-2h-2"/>
+          </svg>
+          Currículo Lattes
+        </a>
+      </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Luiza Rosa Neto · Psicóloga</p>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // Smooth active nav
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 200) current = sec.id;
+      });
+      navLinks.forEach(a => {
+        a.style.opacity = a.getAttribute('href') === `#${current}` ? '1' : '0.8';
+        a.style.color = a.getAttribute('href') === `#${current}`
+          ? 'var(--gold-lt)' : 'var(--cream)';
+      });
+    });
+  </script>
+</body>
+</html>
