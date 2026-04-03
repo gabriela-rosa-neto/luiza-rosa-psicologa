@@ -29,7 +29,7 @@
     "sameAs": [
       "https://instagram.com/luiza.psico"
     ],
-    "knowsAbout": ["Psicomotricidade", "Psicologia", "Desenvolvimento infantil", "Terapia psicomotora"]
+    "knowsAbout": ["Psicomotricidade", "Terapia", "Psicologia", "Desenvolvimento infantil", "Terapia psicomotora"]
   }
   </script>
 
@@ -144,7 +144,6 @@
       padding: 0 2rem;
     }
 
-    /* Flor da Psicologia — imagem PNG */
     .hero-flower {
       position: absolute;
       inset: 0;
@@ -347,32 +346,36 @@
       background: linear-gradient(to right, transparent, var(--gold), transparent);
     }
 
+
     .sobre-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: 5rem;
       align-items: center;
     }
-
+ 
     .sobre-visual {
       position: relative;
+      max-width: 420px;
+      width: 200%;
+      margin: 0 auto;
     }
-
+ 
     .sobre-frame {
-      width: 100%;
-      aspect-ratio: 3/4;
-      border: 1px solid rgba(201,169,110,0.3);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--chocolate-lt), var(--chocolate-mid));
+      aspect-ratio: 2100 / 2850;   
+      background-image: url('/images/lulu.png');
+      background-size: cover;     
+      background-repeat: no-repeat;
+      background-position: center;
     }
-
+ 
+    .sobre-frame img {
+      display: none;
+    }
+ 
     .sobre-frame-inner {
-      width: calc(100% - 30px);
-      height: calc(100% - 30px);
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
       border: 1px solid rgba(201,169,110,0.15);
       display: flex;
       flex-direction: column;
@@ -380,7 +383,7 @@
       justify-content: center;
       gap: 1rem;
     }
-
+ 
     .sobre-initials {
       font-family: var(--font-serif);
       font-size: 6rem;
@@ -390,7 +393,7 @@
       line-height: 1;
       font-style: italic;
     }
-
+ 
     .sobre-frame-tag {
       font-size: 0.7rem;
       letter-spacing: 0.2em;
@@ -398,8 +401,7 @@
       color: var(--cream-dark);
       opacity: 0.5;
     }
-
-    /* Decoração geométrica */
+ 
     .sobre-deco {
       position: absolute;
       bottom: -20px;
@@ -418,28 +420,6 @@
       margin-bottom: 1.5rem;
     }
 
-    .sobre-crp {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1.5rem;
-      border: 1px solid rgba(201,169,110,0.3);
-      margin-top: 1rem;
-    }
-
-    .sobre-crp span:first-child {
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    .sobre-crp span:last-child {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
-      color: var(--cream);
-    }
-
     /* ===== ESPECIALIDADES ===== */
     #especialidades {
       background: var(--chocolate);
@@ -452,7 +432,7 @@
 
     .esp-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.5px;
       background: rgba(201,169,110,0.15);
       border: 1px solid rgba(201,169,110,0.15);
@@ -500,7 +480,7 @@
     }
 
     .esp-desc {
-      font-size: 0.88rem;
+      font-size: 1.25rem;
       line-height: 1.8;
       color: var(--cream);
       opacity: 0.7;
@@ -776,11 +756,12 @@
     <div class="hero-content">
       <span class="hero-tag">Psicologia · Psicomotricidade</span>
       <h1 class="hero-name">Luiza Rosa Neto</h1>
+      <h2 class="hero-content"><em>CRP 07/46016</em></h2>
       <p class="hero-title">Psicóloga Pós Graduanda em Psicomotricidade</p>
       <div class="hero-divider"></div>
       <p class="hero-desc">
-        Corpo, mente e movimento em equilíbrio. Uma escuta sensível para cada jornada,
-        com cuidado que integra o sujeito em sua totalidade.
+        Corpo, mente, linguagem e movimento em equilíbrio. 
+        Uma escuta sensível para cada história respeitando seu tempo, seus atravessamentos e suas formas de existir.
       </p>
       <a href="#contato" class="hero-cta">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
@@ -788,10 +769,12 @@
       </a>
     </div>
 
-    <div class="scroll-hint">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      scroll
-    </div>
+    <a href="#sobre">
+      <div class="scroll-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        scroll
+      </div>
+    </a>
   </section>
 
   <!-- ===== SOBRE ===== -->
@@ -799,32 +782,26 @@
     <div class="container">
       <div class="sobre-grid">
         <div class="sobre-visual reveal">
-          <div class="sobre-frame">
-            <img
-              src="/images/lulu.png"
-              alt="Luiza Rosa Neto Psicóloga (UFRGS)"
-              style="width:100%; height:100%; object-fit:cover; display:block;"
-            />
-          </div>
+          <div class="sobre-frame"></div>
+          <p style="display: flex; justify-content: center; align-items: center; height: 80px; font-size: 20px; color: var(--gold-lt);">
+            <b>CRP 07/46016</b></p>
         </div>
 
         <div class="sobre-text reveal">
           <span class="section-label">Quem sou</span>
-          <h2 class="section-title-psico">Psicologa formada pela Universidade Federal do Rio Grande do Sul (UFRGS).</h2>
-          <p>
-            Atuou no acompanhamento clínico individual e grupal, além de possuir experiência no trabalho com equipes interdisciplinares e multidisciplinares. 
-          </p>
-          <p>
-            Atualmente cursa Pós-Graduação em Psicomotricidade. Possui trajetória em serviços públicos de saúde mental e de atenção psicossocial, com experiência no acompanhamento de casos complexos relacionados ao desenvolvimento e ao sofrimento psíquico.
-          </p>
-          <p>
-            Atendo crianças, adolescentes, adultos e idosos, a partir da orientação psicanalítica. 
+
+              <p>Sou psicóloga <b>(CRP 07/46016)</b> formada pela Universidade Federal do Rio Grande do Sul (UFRGS), com atuação orientada pela psicanálise. Atualmente, curso Pós-Graduação em Psicomotricidade, ampliando meu olhar para a integração entre corpo, mente e movimento.</p>
+
+              <p>Ao longo da minha trajetória, atuei no acompanhamento clínico individual e grupal, além de experiências em serviços públicos de saúde mental e de atenção psicossocial. Nesse percurso, trabalhei em articulação com equipes interdisciplinares e multidisciplinares, acompanhando casos complexos relacionados aos transtornos do neurodesenvolvimento e ao sofrimento psíquico.</p>
+
+              <p>Meu trabalho parte de uma escuta sensível, que considera o sujeito em sua totalidade. Acredito que cada pessoa carrega uma história singular, que se expressa não apenas na fala, mas também no corpo, nos afetos e nas formas de se relacionar com o mundo.</p>
+
+              <p>A psicomotricidade entra no meu fazer clínico ampliando o olhar ao considerar o corpo como parte essencial da experiência subjetiva. Corpo e psiquismo não estão separados — se expressam juntos, se afetam e se transformam mutuamente. Integrar essas dimensões é também possibilitar novos modos de se perceber, se movimentar e existir.</p>
+
+              <p>Atendo crianças, adolescentes, adultos e idosos, oferecendo um espaço de escuta onde cada trajetória pode ser acolhida em seu próprio tempo. A clínica, para mim, é um lugar de construção — onde, a partir da fala e do vínculo, novos sentidos podem ser construídos. </p>
+
             <a href="https://linktr.ee/luizarosaneto" target="_blank" rel="noopener noreferrer" style="font-weight: bold; color:#F4C0D1;">https://linktr.ee/luizarosaneto</a>
           </p>
-          <div class="sobre-crp">
-            <span>CRP</span>
-            <span>XXX</span>
-          </div>
         </div>
       </div>
     </div>
@@ -841,27 +818,23 @@
       <div class="esp-grid">
         <div class="esp-card reveal">
           <h3 class="esp-name">Psicomotricidade</h3>
-          <p class="esp-desc">
-            Terapia que integra corpo e mente, trabalhando coordenação motora,
-            esquema corporal, equilíbrio e expressão emocional através do movimento, com espaço
-            de escuta seguro para promover autoconhecimento e bem-estar emocional.
-          </p>
-        </div>
-
-        <div class="esp-card reveal">
-          <h3 class="esp-name">Desenvolvimento Infantil</h3>
-          <p class="esp-desc">
-            Acompanhamento para crianças e adolescentes com dificuldades de aprendizagem,
-            atenção, coordenação e comportamento, com foco no potencial de cada uma.
-          </p>
+          <p class="esp-desc">A psicomotricidade é um trabalho que integra corpo e psiquismo, considerando o movimento como forma de expressão do sujeito. Através dela, são trabalhados aspectos como coordenação motora, esquema corporal, equilíbrio e organização espacial, sempre articulados à dimensão emocional e relacional, onde o corpo pode se expressar e ganhar lugar na experiência subjetiva.</p>
+          <p class="esp-desc">A psicomotricidade pode ser realizada em diferentes momentos da vida, sendo especialmente potente na infância — nos tempos precoces do desenvolvimento — e na velhice, auxiliando na manutenção da autonomia, na relação com o corpo e na qualidade de vida. </p>
         </div>
 
         <div class="esp-card reveal">
           <h3 class="esp-name">Psicoterapia</h3>
           <p class="esp-desc">
-            Atendimento psicológico para crianças e adolescentes exclusivamente de forma presencial 
-            em Porto Alegre/RS, adultos e idosos também de forma online pelo mundo.
+            Atendimento psicológico orientado pela psicanálise, considerando a singularidade de cada sujeito. 
           </p>
+          &nbsp;
+            <ul class="esp-desc">
+              <p><li>Crianças e adolescentes são atendidos presencialmente em Porto Alegre/RS. </li></p>
+              <p><li>Adultos e idosos podem ser atendidos também na modalidade online.</li></p>
+            </ul>
+          <blockquote style="margin: 0; padding: 0;">
+
+          </blockquote>
         </div>
       </div>
     </div>
@@ -876,27 +849,27 @@
         </div>
         <div class="abordagem-cards">
           <div class="abordagem-card reveal">
-            <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">🧠</div>
-            <h4>Psicanálise e Psicomotricidade</h4>
-            <p>Há emoções que o corpo carrega antes de encontrar palavras. Acompanhamento de cada pessoa no caminho de reconhecer, expressar e transformar o que vive dentro de si.</p>
+            <div class="abordagem-icon" style="background:rgba(251,234,240,0.12); color:#F4C0D1;">♥</div>
+            <h4>Escuta Ativa e Humanizada</h4>
+            <p>Cada pessoa é única. O atendimento é adaptado ao ritmo, às necessidades e à história de vida de cada um que chega.</p>
           </div>
 
           <div class="abordagem-card reveal">
             <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">𝚿</div>
             <h4>Empatia e Sensibilidade</h4>
-            <p>O vínculo terapêutico é construído sobre presença genuína e escuta ativa. Cada atendimento respeita a singularidade de quem chega, sem pressa e sem julgamentos.</p>
+            <p>O vínculo terapêutico é construído sobre presença e escuta ativa. Cada atendimento respeita a singularidade de quem chega, sem pressa e sem julgamentos. </p>
           </div>
 
           <div class="abordagem-card reveal">
-            <div class="abordagem-icon" style="background:rgba(251,234,240,0.12); color:#F4C0D1;">♥</div>
-            <h4>Escuta Ativa e Humanizada</h4>
-            <p>Cada pessoa é única. O atendimento é adaptado ao ritmo, às necessidades e à história de vida de quem chega, sem julgamentos.</p>
+            <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">🧠</div>
+            <h4>Psicanálise</h4>
+            <p>A psicanálise é uma abordagem com foco no inconsciente, além de se orientar pela escuta atenta daquilo que cada sujeito tem a contar sobre sua história, seus afetos e suas formas de se relacionar. O trabalho acontece a partir da palavra e da linguagem, em um espaço em que o sofrimento pode ser acolhido e elaborado, possibilitando novas formas de compreensão sobre si e o mundo a sua volta. Meu trabalho vem principalmente da leitura de Freud e Lacan, articulando psicanálise, linguística e questões da contemporaneidade. </p>
           </div>
 
           <div class="abordagem-card reveal">
             <div class="abordagem-icon" style="background:rgba(225,245,238,0.1); color:#5DCAA5;">◎</div>
             <h4>Visão Integrada</h4>
-            <p>Corpo e mente são inseparáveis. O trabalho considera tanto as dimensões emocionais quanto as corporais na vida.</p>
+            <p>Corpo, linguagem e relações sociais fazem parte de quem somos e não podem ser separados. Cada pessoa se constrói a partir de sua história, dos vínculos que estabelece e da forma como se relaciona com o mundo. O trabalho considera as dimensões emocionais, corporais e os atravessamentos sociais que constituem cada sujeito. O sofrimento é compreendido em sua complexidade, levando em conta a história, os vínculos e o contexto em que cada pessoa está inserida.</p>
           </div>
         </div>
       </div>
@@ -912,7 +885,7 @@
 
       <div class="contato-links reveal">
         <!-- WhatsApp -->
-        <a href="https://wa.me/555191758608" target="_blank" rel="noopener noreferrer" class="contato-btn primary" aria-label="WhatsApp">
+        <a href="https://wa.me/555182022541" target="_blank" rel="noopener noreferrer" class="contato-btn primary" aria-label="WhatsApp">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.522 5.858L.055 23.454a.5.5 0 00.608.61l5.788-1.516A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.95 9.95 0 01-5.073-1.384l-.36-.214-3.742.981.999-3.648-.235-.374A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
